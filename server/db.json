@@ -1,3 +1,19 @@
 {
-  "todos": []
+  "todos": [
+    {
+      "name": "test",
+      "done": false,
+      "id": 1
+    },
+    {
+      "name": "test",
+      "done": false,
+      "id": 2
+    },
+    {
+      "name": "js",
+      "done": false,
+      "id": 3
+    }
+  ]
 }

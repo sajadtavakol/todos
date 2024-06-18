@@ -24,6 +24,11 @@ export default class TodoList extends Component {
             let mainTodo = allTodos[todoIndex];
             mainTodo.done = !mainTodo.done;
             await putTodos(mainTodo, todoId);
+            const setTodoState = async () => {
+                const { data } = await getAllTodos();
+                this.setState({ todos: data })
+            }
+            setTodoState()
         } catch (err) {
             console.log(err);
         }
@@ -33,7 +38,12 @@ export default class TodoList extends Component {
     async deleteTodo(todoId) {
         try {
             await deleteTodo(todoId);
-            toast.error('Delete Todo is Success')
+            toast.error('Delete Todo is Success');
+            const setTodoState = async () => {
+                const { data } = await getAllTodos();
+                this.setState({ todos: data })
+            }
+            setTodoState()
         } catch (err) {
             console.log(err);
         }
@@ -44,7 +54,12 @@ export default class TodoList extends Component {
         const postTodo = async () => {
             try {
                 await setTodos(newTodo);
-                toast.success('Add Todo is Success')
+                toast.success('Add Todo is Success');
+                const setTodoState = async () => {
+                    const { data } = await getAllTodos();
+                    this.setState({ todos: data })
+                }
+                setTodoState()
             } catch (err) {
                 console.log(err);
             }
@@ -59,14 +74,6 @@ export default class TodoList extends Component {
     }
 
     componentDidMount() {
-        const setTodoState = async () => {
-            const { data } = await getAllTodos();
-            this.setState({ todos: data })
-        }
-        setTodoState()
-    }
-
-    componentDidUpdate() {
         const setTodoState = async () => {
             const { data } = await getAllTodos();
             this.setState({ todos: data })
