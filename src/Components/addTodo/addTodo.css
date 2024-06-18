@@ -1,0 +1,39 @@
+.add-todo-input, .add-todo-btn {
+    padding: 0;
+    background: none;
+    border: none;
+    outline: none;
+}
+.add-todo input {
+    background: transparent;
+    border: none;
+    outline: none;
+    width: 85%;
+}
+.add-todo input::placeholder, .add-todo input {
+    color: #e4e4e4;
+    font-size: 19px;
+    font-weight: 400;
+}
+.add-todo {
+    display: flex;
+    justify-content: space-between;
+    background-color: #3537367e;
+    backdrop-filter: blur(10px);
+    padding: 9px 15px;
+    border-radius: 9px;
+    margin-top: 40px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 15px;
+    border-bottom: 2px solid;
+}
+.add-todo-btn {
+    font-size: 30px;
+    color: #fff;
+    display: flex;
+    cursor: pointer;
+}
+.line-space {
+    margin: 40px 0;
+    background-color: rgba(255, 255, 255, 0.171);
+    height: 1.5px;
+}

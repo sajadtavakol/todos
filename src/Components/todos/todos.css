@@ -1,0 +1,53 @@
+.todo-item {
+    background-color: #353736;
+    color: #fff;
+    padding: 15px;
+    margin-bottom: 12px;
+    border-radius: 9px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 5px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.todo-item:hover {
+    background-color: #464545;
+}
+.todo-check svg {
+    font-size: 25px;
+}
+
+.todo-title span {
+    font-size: 17px;
+}
+
+.todo-list-head {
+    font-size: 60px;
+    font-weight: 700;
+    color: #fff;
+    display: flex;
+    align-items: flex-end;
+    gap: 15px;
+}
+
+
+.sun-icon {
+    animation: sunAnime 10s linear infinite;
+}
+.todo-list  {
+    padding: 25px;
+}
+.todo-done {
+    opacity: 0.8;
+    text-decoration: line-through;
+}
+@keyframes sunAnime {
+    0% {
+        rotate: 0deg;
+    }
+
+    100% {
+        rotate: 360deg;
+    }
+}

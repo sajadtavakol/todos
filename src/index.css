@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url(./Components/todos/image/pexels-therato-1933239.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 576px) {
+  .todo-list {
+    width: 560px;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .todo-list {
+    width: 540px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .todo-list {
+    width: 720px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .todo-list {
+    width: 960px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .todo-list {
+    width: 1140px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .todo-list {
+    width: 1320px;
+  }
+}

@@ -1,0 +1,23 @@
+.todo-list-header {
+    display: flex;
+    flex-direction: column;
+}
+.today-date {
+    color: #fff;
+    font-size: 21px;
+    margin-top: 20px;
+}
+.todo-list-items select {
+    background: transparent;
+    color: #fff;
+    font-size: 18px;
+    padding: 7px;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 9px;
+    margin-bottom: 25px;
+}
+.todo-list-items select option {
+    color: black;
+    font-size: 16px;
+}
